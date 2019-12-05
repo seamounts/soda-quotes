@@ -119,7 +119,7 @@ func main() {
 		templates: template.Must(template.ParseGlob("views/index.html")),
 	}
 
-	e.Static("/statics", "statics")
+	e.Static("/", "statics")
 
 	// Stats
 	s := NewStats()
